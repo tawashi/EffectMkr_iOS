@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1626DAF120383D7A00B40C1F /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626DAF020383D7A00B40C1F /* SpriteSheet.swift */; };
+		1626DAFD2039085100B40C1F /* effect.json in Resources */ = {isa = PBXBuildFile; fileRef = 1626DAFC2039085000B40C1F /* effect.json */; };
+		162EB1992039B178003E9EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162EB1982039B177003E9EF2 /* Assets.xcassets */; };
+		162EB19C2039B4CA003E9EF2 /* fx2.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB19B2039B4CA003E9EF2 /* fx2.png */; };
+		162EB19E2039B4D9003E9EF2 /* fx2_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB19D2039B4D9003E9EF2 /* fx2_icon.png */; };
+		162EB1A02039B4E4003E9EF2 /* fx1.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB19F2039B4E3003E9EF2 /* fx1.png */; };
+		162EB1A22039B4F0003E9EF2 /* fx1_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB1A12039B4F0003E9EF2 /* fx1_icon.png */; };
+		162EB1A42039C3AF003E9EF2 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EB1A32039C3AF003E9EF2 /* ButtonNode.swift */; };
+		162EB1A62039F957003E9EF2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 162EB1A52039F957003E9EF2 /* GameScene.sks */; };
 		16777F32203819650030B391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16777F31203819650030B391 /* AppDelegate.swift */; };
-		16777F34203819650030B391 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 16777F33203819650030B391 /* GameScene.sks */; };
-		16777F36203819650030B391 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 16777F35203819650030B391 /* Actions.sks */; };
 		16777F38203819650030B391 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16777F37203819650030B391 /* GameScene.swift */; };
 		16777F3A203819650030B391 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16777F39203819650030B391 /* GameViewController.swift */; };
 		16777F3D203819650030B391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16777F3B203819650030B391 /* Main.storyboard */; };
-		16777F3F203819650030B391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16777F3E203819650030B391 /* Assets.xcassets */; };
 		16777F42203819650030B391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16777F40203819650030B391 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1626DAF020383D7A00B40C1F /* SpriteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
+		1626DAFC2039085000B40C1F /* effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = effect.json; sourceTree = "<group>"; };
+		162EB1982039B177003E9EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		162EB19B2039B4CA003E9EF2 /* fx2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx2.png; path = EffectMkr/Assets.xcassets/fx2.imageset/fx2.png; sourceTree = SOURCE_ROOT; };
+		162EB19D2039B4D9003E9EF2 /* fx2_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx2_icon.png; path = EffectMkr/Assets.xcassets/fx2_icon.imageset/fx2_icon.png; sourceTree = SOURCE_ROOT; };
+		162EB19F2039B4E3003E9EF2 /* fx1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx1.png; path = EffectMkr/Assets.xcassets/fx1.imageset/fx1.png; sourceTree = SOURCE_ROOT; };
+		162EB1A12039B4F0003E9EF2 /* fx1_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx1_icon.png; path = EffectMkr/Assets.xcassets/fx1_icon.imageset/fx1_icon.png; sourceTree = SOURCE_ROOT; };
+		162EB1A32039C3AF003E9EF2 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		162EB1A52039F957003E9EF2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		16777F2E203819650030B391 /* EffectMkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectMkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16777F31203819650030B391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16777F33203819650030B391 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		16777F35203819650030B391 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		16777F37203819650030B391 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		16777F39203819650030B391 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		16777F3C203819650030B391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		16777F3E203819650030B391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16777F41203819650030B391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16777F43203819650030B391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +53,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1626DAF32038649800B40C1F /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1626DAFC2039085000B40C1F /* effect.json */,
+			);
+			path = JsonFiles;
+			sourceTree = "<group>";
+		};
+		1626DAF6203887FC00B40C1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		162EB19A2039B4A9003E9EF2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				162EB1A12039B4F0003E9EF2 /* fx1_icon.png */,
+				162EB19F2039B4E3003E9EF2 /* fx1.png */,
+				162EB19D2039B4D9003E9EF2 /* fx2_icon.png */,
+				162EB19B2039B4CA003E9EF2 /* fx2.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		16777F25203819650030B391 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +98,19 @@
 		16777F30203819650030B391 /* EffectMkr */ = {
 			isa = PBXGroup;
 			children = (
+				162EB19A2039B4A9003E9EF2 /* Images */,
+				1626DAF6203887FC00B40C1F /* Models */,
+				1626DAF32038649800B40C1F /* JsonFiles */,
+				1626DAF020383D7A00B40C1F /* SpriteSheet.swift */,
+				162EB1A52039F957003E9EF2 /* GameScene.sks */,
 				16777F31203819650030B391 /* AppDelegate.swift */,
-				16777F33203819650030B391 /* GameScene.sks */,
-				16777F35203819650030B391 /* Actions.sks */,
 				16777F37203819650030B391 /* GameScene.swift */,
 				16777F39203819650030B391 /* GameViewController.swift */,
 				16777F3B203819650030B391 /* Main.storyboard */,
-				16777F3E203819650030B391 /* Assets.xcassets */,
 				16777F40203819650030B391 /* LaunchScreen.storyboard */,
 				16777F43203819650030B391 /* Info.plist */,
+				162EB1982039B177003E9EF2 /* Assets.xcassets */,
+				162EB1A32039C3AF003E9EF2 /* ButtonNode.swift */,
 			);
 			path = EffectMkr;
 			sourceTree = "<group>";
@@ -132,11 +174,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162EB19C2039B4CA003E9EF2 /* fx2.png in Resources */,
+				162EB1A02039B4E4003E9EF2 /* fx1.png in Resources */,
 				16777F3D203819650030B391 /* Main.storyboard in Resources */,
-				16777F34203819650030B391 /* GameScene.sks in Resources */,
-				16777F3F203819650030B391 /* Assets.xcassets in Resources */,
+				1626DAFD2039085100B40C1F /* effect.json in Resources */,
 				16777F42203819650030B391 /* LaunchScreen.storyboard in Resources */,
-				16777F36203819650030B391 /* Actions.sks in Resources */,
+				162EB1A22039B4F0003E9EF2 /* fx1_icon.png in Resources */,
+				162EB19E2039B4D9003E9EF2 /* fx2_icon.png in Resources */,
+				162EB1A62039F957003E9EF2 /* GameScene.sks in Resources */,
+				162EB1992039B178003E9EF2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1626DAF120383D7A00B40C1F /* SpriteSheet.swift in Sources */,
 				16777F38203819650030B391 /* GameScene.swift in Sources */,
 				16777F3A203819650030B391 /* GameViewController.swift in Sources */,
 				16777F32203819650030B391 /* AppDelegate.swift in Sources */,
+				162EB1A42039C3AF003E9EF2 /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -274,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -286,12 +334,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NG6729Q58;
 				INFOPLIST_FILE = EffectMkr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.solana.EffectMkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,12 +352,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NG6729Q58;
 				INFOPLIST_FILE = EffectMkr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.solana.EffectMkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
