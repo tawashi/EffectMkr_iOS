@@ -106,7 +106,7 @@ class ButtonNode: SKSpriteNode {
         if (!isEnabled) {
             return
         }
-
+        print("Touches ended")
         isSelected = false
 
         if (targetTouchUpInside != nil && targetTouchUpInside!.responds(to: actionTouchUpInside!)) {

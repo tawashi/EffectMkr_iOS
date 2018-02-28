@@ -17,10 +17,11 @@ struct EffectModel {
     let fileName: String
     let width: Int
     let height: Int
-    let duration: Float
+    var duration: Float
     let scale: Int
     let diffY: Int
     let frames: String
+    var framesArray: [Int]
     let sound: String
     let colorR: Int
     let colorG: Int
@@ -39,8 +40,8 @@ struct EffectModel {
             let colorR = json["r"] as? Int,
             let colorG = json["g"] as? Int,
             let colorB = json["b"] as? Int
-            else {
-                return nil
+        else {
+            return nil
         }
         self.id = id;
         self.fileName = fileName
@@ -50,11 +51,52 @@ struct EffectModel {
         self.scale = scale
         self.diffY = diffY
         self.frames = frames
+        self.framesArray = [Int]()
         self.sound = sound
         self.colorR = colorR
         self.colorG = colorG
         self.colorB = colorB
+        
+        if (!frames.isEmpty) {
+            self.framesArray = parseFrames(from: frames)
+        }
     }
+    
+    func parseFrames (from framesString: String) -> [Int]{
+        var partsString = [String]()
+        var partsInt = [Int]()
+        if (!framesString.isEmpty) {
+            partsString = framesString.components(separatedBy: ",")
+            for var frameStr in partsString {
+                if frameStr.contains(Character("-")) {
+                    if let rangeStartBracket = frameStr.range(of: "[") {
+                        frameStr.remove(at: rangeStartBracket.lowerBound)
+                    }
+                    if let rangeEndBracket = frameStr.range(of: "]") {
+                        frameStr.remove(at: rangeEndBracket.lowerBound)
+                    }
+                    let bracketsParts = frameStr.components(separatedBy: "-")
+                    let bracketsFirstFrame: Int = Int(bracketsParts[0])!
+                    let bracketsEndFrame: Int = Int(bracketsParts[1])!
+                    var index: Int = bracketsFirstFrame
+                    while index != bracketsEndFrame {
+                        partsInt.append(index)
+                        if (bracketsFirstFrame < bracketsEndFrame) {
+                            index += 1;
+                        } else {
+                            index -= 1;
+                        }
+                    }
+                    partsInt.append(bracketsEndFrame)
+                } else {
+                    partsInt.append(Int(frameStr)!)
+                    continue
+                }
+            }
+        }
+        return partsInt
+    }
+    
 }
 
 class SpriteSheet {
@@ -74,10 +116,10 @@ class SpriteSheet {
         margin = 0
         spacing = 0
 
-        //Gather the necessary frames for the animation
-        //TOOD : support custome frames format like -> [3-7]
+        //Gather animation's frames
         animFrames.removeAll()
-        if effectModel.height > 0 {
+        //If frames are not declared the animation uses all of them
+        if effectModel.frames.isEmpty {
             for row in (0..<effectModel.height).reversed() {//Reversed to start frames from top left corner
                 if effectModel.width > 0{
                     for column in 0..<effectModel.width {
@@ -86,6 +128,16 @@ class SpriteSheet {
                         }
                     }
                 }
+            }
+        } else {
+            for frame in model.framesArray {
+                let xVar = frame % model.width
+                let yVar = frame / model.width
+                let frameWidth = texture.size().width / CGFloat(effectModel.width)
+                let frameHeight = texture.size().height / CGFloat(effectModel.height)
+                let frameRect: CGRect = CGRect(x: (self.margin + frameWidth * CGFloat(xVar)) / self.texture.size().width, y: (texture.size().height - (frameHeight * CGFloat(yVar)) - frameHeight - self.margin) / self.texture.size().height, width: frameWidth / self.texture.size().width, height: frameHeight / self.texture.size().height)
+                let frameTexture = SKTexture(rect: frameRect, in: self.texture)
+                animFrames.append(frameTexture)
             }
         }
     }

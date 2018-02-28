@@ -8,12 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1626DAF120383D7A00B40C1F /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626DAF020383D7A00B40C1F /* SpriteSheet.swift */; };
-		1626DAFD2039085100B40C1F /* effect.json in Resources */ = {isa = PBXBuildFile; fileRef = 1626DAFC2039085000B40C1F /* effect.json */; };
 		162EB1992039B178003E9EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162EB1982039B177003E9EF2 /* Assets.xcassets */; };
-		162EB19C2039B4CA003E9EF2 /* fx2.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB19B2039B4CA003E9EF2 /* fx2.png */; };
-		162EB19E2039B4D9003E9EF2 /* fx2_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB19D2039B4D9003E9EF2 /* fx2_icon.png */; };
-		162EB1A02039B4E4003E9EF2 /* fx1.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB19F2039B4E3003E9EF2 /* fx1.png */; };
-		162EB1A22039B4F0003E9EF2 /* fx1_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162EB1A12039B4F0003E9EF2 /* fx1_icon.png */; };
 		162EB1A42039C3AF003E9EF2 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EB1A32039C3AF003E9EF2 /* ButtonNode.swift */; };
 		162EB1A62039F957003E9EF2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 162EB1A52039F957003E9EF2 /* GameScene.sks */; };
 		16777F32203819650030B391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16777F31203819650030B391 /* AppDelegate.swift */; };
@@ -25,12 +20,7 @@
 
 /* Begin PBXFileReference section */
 		1626DAF020383D7A00B40C1F /* SpriteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
-		1626DAFC2039085000B40C1F /* effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = effect.json; sourceTree = "<group>"; };
 		162EB1982039B177003E9EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		162EB19B2039B4CA003E9EF2 /* fx2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx2.png; path = EffectMkr/Assets.xcassets/fx2.imageset/fx2.png; sourceTree = SOURCE_ROOT; };
-		162EB19D2039B4D9003E9EF2 /* fx2_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx2_icon.png; path = EffectMkr/Assets.xcassets/fx2_icon.imageset/fx2_icon.png; sourceTree = SOURCE_ROOT; };
-		162EB19F2039B4E3003E9EF2 /* fx1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx1.png; path = EffectMkr/Assets.xcassets/fx1.imageset/fx1.png; sourceTree = SOURCE_ROOT; };
-		162EB1A12039B4F0003E9EF2 /* fx1_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fx1_icon.png; path = EffectMkr/Assets.xcassets/fx1_icon.imageset/fx1_icon.png; sourceTree = SOURCE_ROOT; };
 		162EB1A32039C3AF003E9EF2 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		162EB1A52039F957003E9EF2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		16777F2E203819650030B391 /* EffectMkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectMkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +46,6 @@
 		1626DAF32038649800B40C1F /* JsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				1626DAFC2039085000B40C1F /* effect.json */,
 			);
 			path = JsonFiles;
 			sourceTree = "<group>";
@@ -71,10 +60,6 @@
 		162EB19A2039B4A9003E9EF2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				162EB1A12039B4F0003E9EF2 /* fx1_icon.png */,
-				162EB19F2039B4E3003E9EF2 /* fx1.png */,
-				162EB19D2039B4D9003E9EF2 /* fx2_icon.png */,
-				162EB19B2039B4CA003E9EF2 /* fx2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -174,13 +159,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162EB19C2039B4CA003E9EF2 /* fx2.png in Resources */,
-				162EB1A02039B4E4003E9EF2 /* fx1.png in Resources */,
 				16777F3D203819650030B391 /* Main.storyboard in Resources */,
-				1626DAFD2039085100B40C1F /* effect.json in Resources */,
 				16777F42203819650030B391 /* LaunchScreen.storyboard in Resources */,
-				162EB1A22039B4F0003E9EF2 /* fx1_icon.png in Resources */,
-				162EB19E2039B4D9003E9EF2 /* fx2_icon.png in Resources */,
 				162EB1A62039F957003E9EF2 /* GameScene.sks in Resources */,
 				162EB1992039B178003E9EF2 /* Assets.xcassets in Resources */,
 			);
